@@ -43,7 +43,7 @@ jobs:
           context: ./rails_app
           file: ./rails_app/Dockerfile
           provenance: false
-          push: false
+          push: true
           pull: true
           load: true
           builder: ${{ steps.buildx.outputs.name }}
