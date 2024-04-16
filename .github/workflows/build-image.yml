@@ -35,7 +35,7 @@ jobs:
           images: ${{ secrets.YANDEX_REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
             type=raw,value={{sha}},event=branch
-            type=ref, event=tag
+            type=ref,event=tag
             type=raw,value=latest
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
