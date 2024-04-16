@@ -10,7 +10,7 @@ jobs:
 
   build-and-push-image:
     if: github.event_name == 'push'
-    runs-on: yandex-runner
+    runs-on: yandex-runner-org
     permissions:
       contents: read
       packages: write
